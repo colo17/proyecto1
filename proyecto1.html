@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1 Juan Andres Biatturi</title>
+    <script src="proyecto1.js"></script>
+    <link rel="stylesheet" href="proyecto1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navegacion">
+        <img id="logo" src="imagenes/logo.png" alt="Nexos logo"> 
+        <a class="nav-menunosotros" href="proyecto1.html#nosotrosNavegacion">Nosotros</a>
+        <a class="nav-menunoticias" href="proyecto1.html#noticiasNavegacion">Noticias</a>
+        <a class="nav-menuayuda" href="proyecto1.html#contactoNavegacion">Ayuda</a>
+        <div class="flexBoton">
+        <button id="botonIngresar">INGRESAR</button>
+        </div>
+    </nav>
+    <dialog id="popup">
+        <div class="popupimagen">
+            <img src="imagenes/imagen-modal.JPG" alt="Manos Oscar Wild">
+        </div>
+        <div class="popuplateral lateralgrid">
+            <div class="popupflecha" id="cerrarPopUp1">
+                <a href="#"><img src="imagenes/icono-flecha.png" alt="flecha volver atras"></a>
+            </div>
+            <div class="popupvolver" id="cerrarPopUp2">
+                <a href="#">volver atras</a>
+            </div>
+            <div class="popupcruz" id="cerrarPopUp3">
+                <a href="#"><img src="imagenes/icono-cerrar.png" alt="cruz cerrar"></a>
+            </div>
+            <div class="popupregistrar">
+                <h2>REGISTRAR</h2>
+            </div>
+            <div class="popupempresa empresagrid">
+                <div class="popuplogo">
+                    <img src="imagenes/icono-maletin.png" alt="icono maletin">
+                </div>
+                <div class="popuph2">
+                    <h2>MI EMPRESA</h2>
+                </div>
+                <div class="popuptexto">
+                    <p>Breve explicacion a lo que nos referimos</p>
+                </div>
+                <div class="popupflecha2">
+                    <a href="#" id="flechaEmpresa"><img src="imagenes/icono-flecha.png" alt="icono flecha ver mas"></a>
+                </div>
+            </div>
+            <div class="popuporg orggrid">
+                <div class="popuplogo">
+                    <img src="imagenes/icono-persona.png" alt="icono persona">
+                </div>
+                <div class="popuph2">
+                    <h2>MI ORGANIZACION</h2>
+                </div>
+                <div class="popuptexto">
+                    <p>Estamos para ayudarlos a tener exito</p>
+                </div>
+                <div class="popupflecha2">
+                    <a href="#" id="flechaOrg"><img src="imagenes/icono-flecha.png" alt="icono flecha ver mas"></a>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <header>
+        <h1>¡Actúa para cambiar el mundo!</h1>
+        <h2>Fomentamos el vínculo entre empresas y organizaciones para generar un impacto positivo en la sociedad.<br>Descubrí diferentes maneras de involucrar tu organización con la sociedad.</h2>
+    </header>
+    <div id="nosotrosNavegacion" class="nosotros1">
+        <div class="imagen1grid">
+            <img src="imagenes/oficina.png" alt="Oficina">
+        </div>
+        <div class="texto1grid">
+            <h2>Soluciones para empresas</h2>
+            <br>
+            <p>Generamos un medio para que las empresas se involucren en actividades de responsabilidad social.<br>¡Crea un grupo de voluntarios en tu organizacion y se parte del cambio!</p>
+        </div>
+        <div class="imagen2grid">
+            <img src="imagenes/voluntariado.jpg" alt="Voluntariado">
+        </div>
+        <div class="texto2grid">
+            <h2>Soluciones para Organizaciones</h2>
+            <br>
+            <p>Apoyamos a las organizaciones sociales para que alcancen sus objetivos. Ponemos a su disposición una comunidad de voluntarios dispuestos a apoyarlas en sus necesidades.<br>Equipos de voluntarios por empresas dispuestos a potenciar tu impacto en la sociedad.</p>
+        </div>
+    </div>
+    <div class="nosotros2">
+        <div class="textonosotros2">
+            <h2>Encuentra las mejores oportunidades</h2>
+            <br>
+            <p>La plataforma cuenta con gran variedad de proyectos locales (sociales, educativos y medioambientales), donde encontraras el que mejor se adapte a la experiencia que estas buscando.<br>Te ayudamos en la coordinación con la organización de forma simple y rápida. </p>
+        </div>
+        <div class="gridNosotros2">
+            <div class="gridBotonesNosotros2" id="serVoluntario">
+                <div class="logoNosotros2"><img id="iconoMano" src="imagenes/icono-mano.png" alt="icono mano"></div>
+                <div class="masNosotros2"><img src="imagenes/icono-mas.png" alt="icono mas"></div>
+                <div class="textoBotonNosotros2">Ser Voluntario</div>
+            </div>
+            <div class="gridBotonesNosotros2" id="donar">
+                <div class="logoNosotros2"><img src="imagenes/icono-mano-corazon.png" alt="icono mano con corazon"></div>
+                <div class="masNosotros2"><img src="imagenes/icono-mas.png" alt="icono mas"></div>
+                <div class="textoBotonNosotros2">Donar</div>
+            </div>
+            <div class="gridBotonesNosotros2" id="reciclar">
+                <div class="logoNosotros2"><img src="imagenes/icono-reciclar.png" alt="icono reciclar"></div>
+                <div class="masNosotros2"><img src="imagenes/icono-mas.png" alt="icono mas"></div>
+                <div class="textoBotonNosotros2">Reciclar</div>
+            </div>
+            <div class="gridBotonesNosotros2" id="llamadosLaborales">
+                <div class="logoNosotros2"><img src="imagenes/icono-maletin.png" alt="icono maletin"></div>
+                <div class="masNosotros2"><img src="imagenes/icono-mas.png" alt="icono mas"></div>
+                <div class="textoBotonNosotros2">Llamados<br>Laborales</div>
+            </div>
+        </div>
+    </div>
+    <div id="noticiasNavegacion" class="noticias">
+        <div class="textoNoticias">
+            <h2>Noticias</h2>
+            <p><a href="#">ver todas</a></p>
+        </div>
+        <div class="noticiasGrid">
+            <div class="noticiaGrid" id="noticia1">
+                <div class="imagenNoticia"><img src="imagenes/noticiaperro.jpg" alt="chica con perros">
+                    <div class="seccionNoticia"><p>ANIMALES</p></div>
+                </div>
+                <div class="calendarioNoticia"><img src="imagenes/icono-calendario.png" alt="icono calendario"></div>
+                <div class="fechaNoticia"><p>10/08/2021</p></div>
+                <div class="relojNoticia"><img src="imagenes/icono-reloj.png" alt="icono reloj"></div>
+                <div class="horaNoticia"><p>4 min</p></div>
+                <div class="textoNoticia"><h2>Fundappas abre un nuevo centro</h2><br><p>El nuevo centro estará ubicado dentro del predio municipal Parque Rivera.<br>La inauguración de centro contara con la presencia de la intendenta Carolina...</p></div>
+                <div class="flechaVerMasNoticia"><img src="imagenes/icono-flecha.png" alt="icono flecha"></div>
+                <div class="verMasNoticia"><a href="#">ver más</a></div>
+            </div>
+            <div class="noticiaGrid" id="noticia2">
+                <div class="imagenNoticia"><img src="imagenes/techouruguay1.jpg" alt="Techo Uruguay uno">
+                    <div class="seccionNoticia"><p>URUGUAY</p></div>
+                </div>
+                <div class="calendarioNoticia"><img src="imagenes/icono-calendario.png" alt="icono calendario"></div>
+                <div class="fechaNoticia"><p>10/08/2021</p></div>
+                <div class="relojNoticia"><img src="imagenes/icono-reloj.png" alt="icono reloj"></div>
+                <div class="horaNoticia"><p>4 min</p></div>
+                <div class="textoNoticia"><h2>DIRECTV y TECHO inauguraron un espacio deportivo</h2><br><p>Los vecinos del lugar recibieron con alegria la concreción de este proyecto<br>que busca promover la socialización y la actividad física...</p></div>
+                <div class="flechaVerMasNoticia"><img src="imagenes/icono-flecha.png" alt="icono flecha"></div>
+                <div class="verMasNoticia"><a href="#">ver más</a></div>
+            </div>
+            <div class="noticiaGrid" id="noticia3">
+                <div class="imagenNoticia"><img src="imagenes/remaruruguay.jpg" alt="Remar Uruguay">
+                    <div class="seccionNoticia seccionVoluntariado"><p>VOLUNTARIADO</p></div>
+                </div>
+                <div class="calendarioNoticia"><img src="imagenes/icono-calendario.png" alt="icono calendario"></div>
+                <div class="fechaNoticia"><p>10/08/2021</p></div>
+                <div class="relojNoticia"><img src="imagenes/icono-reloj.png" alt="icono reloj"></div>
+                <div class="horaNoticia"><p>3 min</p></div>
+                <div class="textoNoticia"><h2>Joranda de voluntariados</h2><br><p>Se realizó una nueva jornada de voluntarios Remar. El encuentro tuvo parte en el departamento de montevideo y contó...</p></div>
+                <div class="flechaVerMasNoticia"><img src="imagenes/icono-flecha.png" alt="icono flecha"></div>
+                <div class="verMasNoticia"><a href="#">ver más</a></div>
+            </div>
+            <div class="noticiaGrid" id="noticia4">
+                <div class="imagenNoticia"><img src="imagenes/techouruguay2.png" alt="Techo Uruguay 2">
+                    <div class="seccionNoticia"><p>ANIMALES</p></div>
+                </div>
+                <div class="calendarioNoticia"><img src="imagenes/icono-calendario.png" alt="icono calendario"></div>
+                <div class="fechaNoticia"><p>10/08/2021</p></div>
+                <div class="relojNoticia"><img src="imagenes/icono-reloj.png" alt="icono reloj"></div>
+                <div class="horaNoticia"><p>5 min</p></div>
+                <div class="textoNoticia"><h2>Lanzamiento del plan Tu Techo</h2><br><p>Techo Uruguay infromó su nuevo plan de acción para el segundo semestre del año.</p></div>
+                <div class="flechaVerMasNoticia"><img src="imagenes/icono-flecha.png" alt="icono flecha"></div>
+                <div class="verMasNoticia"><a href="#">ver más</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="contactoNavegacion" class="contacto">
+        <div class="imagenContacto">
+            <img src="imagenes/laptop-escritorio.jpg" alt="latop en escritorio">
+        </div>
+        <div class="formularioContacto">
+            <form action="#">
+                <div class="gridContacto">
+                    <h2 class="h2contacto">Contacto</h2>
+                    <ul class="textoDatos">
+                        <li >Texto dato</li>
+                        <li><input type="text" name="dato a completar 1" id="datoACompletar1" placeholder="dato a completar" size="30rem"></li>
+                        <li>Texto dato</li>
+                        <li><input type="text" name="dato a completar 2" id="datoACompletar2" placeholder="dato a completar" size="30rem"></li>
+                    </ul>
+                    <ul class="mensajeContacto">
+                        <li>Mensaje</li>
+                        <li class="mensajeC"><textarea type="text" rows="4" name="mensaje Contacto" id="mensajeContacto2" placeholder="Escribe tu mensaje Aqui" maxlength="255"></textarea></li>
+                    </ul>
+                    <button class="botonFormulario" id="enviarFormulario"><a href="proyecto1.html#contactoNavegacion">ENVIAR</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr class="hrvioleta">
+    <hr class="hrblanco">
+    <footer>
+        <div class="logoFooter">
+            <img src="imagenes/logo-blanco.png" alt="logo nexos blanco">
+        </div>
+        <div class="navegacionFooter">
+            <ul>
+                <li><a href="proyecto1.html#nosotrosNavegacion">Nosotros</a></li>
+                <li><a href="proyecto1.html#noticiasNavegacion">Noticias</a></li>
+                <li><a href="proyecto1.html#contactoNavegacion">Contacto</a></li>
+                <li>Terminos y condiciones</li>
+            </ul>
+        </div>
+        <div class="redes redesGrid">
+            <div class="seguinos">
+                Seguinos!
+            </div>
+            <div class="facebook">
+                <a title="Facebook" href="https://facebook.com/"><img src="imagenes/facebook-logo.png" alt="Facebook logo"></a>
+            </div>
+            <div class="twitter">
+                <a title="Twitter" href="https://twitter.com/"><img src="imagenes/Twitter-logo.png" alt="Twitter logo"></a>
+            </div>
+            <div class="instagram">
+                <a title="Instagram" href="https://instagram.com/"><img src="imagenes/Instagram-Logo.png" alt="Facebook logo"></a>
+            </div>
+        </div>
+        <br>
+    </footer>
+    <hr class="hrblanco2">
+    <div class="copyright"><p>Copyright ©2021 All rights reserved</p></div>
+    <script src="proyecto1.js"></script>
+</body>
+</html>

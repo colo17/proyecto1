@@ -1,0 +1,1612 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'DM Sans', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.navegacion{
+    display: flex;
+}
+
+h2{
+    font-weight: 100;
+}
+
+.navegacion{
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem 10rem auto;
+    grid-row: 3rem;
+    height: 6rem;
+}
+
+.nav-menunosotros{
+    color: black;
+    font-weight: bold;
+    margin-top: 1.7rem;
+    font-size: 1.2rem;
+    margin-left: 12rem;
+}
+
+.nav-menunoticias{
+    color: black;
+    font-weight: bold;
+    margin-top: 1.7rem;
+    font-size: 1.2rem;
+    margin-left: 10rem;
+}
+
+.nav-menuayuda{
+    color: black;
+    font-weight: bold;
+    margin-top: 1.7rem;
+    font-size: 1.2rem;
+    margin-left: 8rem;
+}
+
+#logo {
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    margin-top: 1.2rem;
+    margin-left: 8rem;
+}
+
+.flexBoton{
+    display: flex;
+    justify-content: right;
+}
+
+#botonIngresar{
+    width: 8rem;
+    height: 3rem;
+    margin-right: 20%;
+    margin-top: 1.2rem;
+    background-color: #5227CC;
+    color: white;
+    border:#5227CC;
+    border-radius: 3rem;
+    padding: 0.3rem;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 0.5rem;
+}
+
+#popup{
+    grid-template-columns: 50rem 7rem;
+    grid-template-rows: 32rem;
+    background-color: rgba(0, 0, 0, 0.55);
+    margin-left: 30%;
+    border: 1px solid white;
+    border-radius: 1rem;
+    display: none;
+    box-shadow: black;
+    margin-top: 2rem;
+    backdrop-filter: opacity(80%);
+}
+
+.popupimagen{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.popupimagen img{
+    width: 26rem;
+    height: 32rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.popuplateral{
+    grid-row: 1;
+    grid-column: 2;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    background-color: white;
+}
+
+.lateralgrid{
+    display: grid;
+    grid-template-columns: 2rem 4rem 12rem 4rem;
+    grid-template-rows: 3rem 4rem 8rem 8rem;
+    margin-left: -24rem;
+}
+
+.popupflecha{
+    grid-row: 1;
+    grid-column: 1;
+    margin-left: 1rem;
+    margin-top: 1.2rem;
+}
+
+.popupflecha img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.popupvolver{
+    grid-column: 2;
+    grid-row: 1;
+    width: 10rem;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+}
+
+.popupvolver a{
+    color: black;
+}
+
+.popupcruz{
+    grid-column: 4;
+    grid-row: 1;
+    margin-left: 9rem;
+    margin-top: 1rem;
+}
+
+.popupcruz img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.popupregistrar{
+    grid-column: 3;
+    grid-row: 2;
+    margin-left: 30%;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.popupregistrar h2{
+    font-weight: bold;
+}
+
+.popupempresa{
+    grid-column: 1/5;
+    grid-row: 3;
+}
+
+.popuporg{
+    grid-column: 1/5;
+    grid-row: 4;
+}
+
+.empresagrid{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 4rem 12rem 2rem;
+    grid-template-rows: auto auto;
+    border: 1px solid grey;
+    box-shadow: black;
+    border-radius: 1rem;
+    margin-left: 10%;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+.orggrid{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 4rem 12rem 2rem;
+    grid-template-rows: auto auto;
+    border: 1px solid grey;
+    box-shadow: black;
+    border-radius: 1rem;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+.popuplogo{
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+.empresagrid .popuplogo{
+    background-color:#5298FF;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.orggrid .popuplogo{
+    background-color: #5227CC;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.popuplogo img{
+    width: 3rem;
+    height: 3rem;
+    margin-top: 50%;
+    margin-left: 10%;
+}
+
+.popuph2{
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.popupempresa .popuph2 h2{
+    color:#5298FF;
+    font-weight: bold;
+}
+.popuporg .popuph2 h2{
+    color: #5227CC;
+    font-weight: bold;
+    width: 14rem;
+}
+
+.popuptexto{
+    grid-column: 2;
+    grid-row: 2;
+    width: 12rem;
+    color: grey;
+    margin-left: 1rem;
+}
+
+.popupflecha2{
+    grid-column: 3;
+    grid-row: 2;
+    margin-left: 4rem;
+    margin-top: 3rem;
+}
+
+
+header{
+    width: 100%;
+    height: 30rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/manos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    background-blend-mode: darken;
+}
+
+header h1{
+    font-size: 3rem;
+    line-height: 12rem;
+}
+
+header h2{
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.nosotros1 {
+    display: grid;
+    grid-template-rows: 15Srem 15rem;
+    grid-template-columns: auto auto;
+    background-color: #5298FF;
+    font-weight: 100;
+}
+
+.texto1grid{
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    font-weight: 100;
+    grid-column: 2;
+    grid-row: 1;
+    margin-right: 16rem;
+    margin-left: 3rem;
+    font-size: 1.5rem;
+    margin-top: 4rem;
+}
+
+.texto2grid{
+    color: white;
+    font-weight: 100;
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 12rem;
+    margin-right: 8rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.imagen1grid {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 12rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.imagen2grid {
+    grid-column: 2;
+    grid-row: 2;
+    margin-right: 12rem;
+    margin-bottom: 5rem;
+}
+
+.imagen2grid img{
+    height: 20rem;
+    width: 40rem;
+}
+
+.imagen1grid img{
+    height: 20rem;
+    width: 50rem;
+}
+
+.nosotros2{
+    width: 100%;
+    height: 30rem;
+    text-align: center;
+    font-weight: 100;
+    align-content: center;
+    margin-top: 5rem;
+}
+
+.textonosotros2{
+    font-size: 1.2rem;
+    margin-right: 30rem;
+    margin-left: 30rem;
+}
+
+.gridNosotros2{
+    display: grid;
+    grid-template-rows: 15rem;
+    grid-template-columns: auto auto auto auto;
+    font-weight: 100;
+    margin-top: 3rem;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    color: white;
+    gap: 2%;
+}
+
+#serVoluntario{
+    background-color: #DC3545;
+    border-radius: 3rem;
+}
+
+#donar{
+    background-color: #FF9C07;
+    border-radius: 3rem;
+}
+
+#reciclar{
+    background-color: #28A745;
+    border-radius: 3rem;
+}
+
+#llamadosLaborales{
+    background-color: #17A2B8;
+    border-radius: 3rem;
+}
+
+.gridBotonesNosotros2{
+    display: grid;
+    grid-template-columns: 12rem 12rem;
+    grid-template-rows: 9rem 9rem;
+}
+
+.gridBotonesNosotros2 .logoNosotros2{
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+#serVoluntario .logoNosotros2 img{
+    margin-top: -0.6rem;
+}
+
+.gridBotonesNosotros2 .masNosotros2{
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 2rem;
+    margin-left: 8rem;
+}
+
+.gridBotonesNosotros2 .textoBotonNosotros2{
+    grid-column: 1 / 3;
+    grid-row: 2;
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.noticias{
+    background-color: #5298FF;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+.noticiasGrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 30rem;
+    gap: 2%;
+    margin-left: 10%;
+    margin-right: 20%;
+}
+
+.textoNoticias h2{
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    padding-top: 5rem;
+    color: white;
+    font-size: 3rem;
+}
+
+.textoNoticias p{
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    margin-top: 5rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.textoNoticias a{
+    text-decoration: underline;
+    color: white;
+    margin-top: 1rem;
+}
+
+#noticia1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#noticia2{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#noticia3{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#noticia4{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.noticiaGrid{
+    display: grid;
+    grid-template-columns: 3rem 6rem 8rem 6rem;
+    grid-template-rows: 11rem 2rem 3rem 12rem 2rem;
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.imagenNoticia {
+    grid-column: 1 / 5;
+    grid-row: 1 / 3;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.imagenNoticia img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.seccionNoticia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    background-color: #5227CC;
+    color: white;
+    width: 5.5rem;
+    height: 1.6rem;
+    text-align: center;
+    position: relative;
+    bottom: 4rem;
+    left: 1rem;
+    font-size: 1rem;
+}
+
+.seccionVoluntariado{
+    width: 8rem;
+}
+
+.calendarioNoticia{
+    grid-column: 1;
+    grid-row: 3;
+    text-align: right;
+    margin-top: 0.5rem;
+}
+
+.fechaNoticia{
+    grid-column: 2;
+    grid-row: 3;
+    margin-left: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.relojNoticia{
+    grid-column: 3;
+    grid-row: 3;
+    text-align: right;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.horaNoticia{
+    grid-column: 4;
+    grid-row: 3;
+    margin-top: 0.5rem;
+}
+
+.textoNoticia{
+    grid-column: 1 / 5;
+    grid-row: 4;
+    margin-left: 1.5rem;
+}
+.textoNoticia h2{
+    font-weight: bold;
+}
+
+.flechaVerMasNoticia{
+    grid-column: 3;
+    grid-row: 5;
+    text-align: right;
+    margin-right: 0.5rem;
+    margin-top: 0.1rem;
+}
+
+.verMasNoticia{
+    grid-column: 4;
+    grid-row: 5;
+}
+.verMasNoticia a{
+    color: black;
+    text-decoration: none;
+}
+
+.contacto{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    width: 100%;
+    height: 20rem;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.imagenContacto{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.imagenContacto img{
+    height: 15rem;
+    width: 30rem;
+    margin-left: 29rem;
+}
+
+.formularioContacto{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.gridContacto{
+    display: grid;
+    grid-template-columns: 10rem 10rem;
+    grid-template-rows:5rem 7rem 5rem;
+}
+
+.h2contacto{
+    grid-column: 1 / 2;
+    grid-row: 1;
+    text-align: center;
+    margin-bottom: 20rem;
+    margin-left: 8rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.textoDatos{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#datoACompletar1, #datoACompletar2{
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+    padding: 0.2rem;
+}
+
+.mensajeContacto{
+    grid-column: 2;
+    grid-row: 2;
+    text-align: left;
+    margin-left: 5rem;
+}
+
+#mensajeContacto2{
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+    text-align: left;
+}
+
+.botonFormulario{
+    grid-column: 1/3;
+    grid-row: 3;
+    line-height: 2rem;
+    text-align: center;
+    background-color: #5227CC;
+    color: white;
+    border:#5227CC;
+    border-radius: 3rem;
+    font-weight: 100;
+    margin-left: 12rem;
+    height: 2rem;
+    width: 5rem;
+}
+
+.botonFormulario a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #7749F8;
+    display: grid;
+    grid-template-columns: 20rem 20rem 10rem;
+    height: 12rem;
+    color: white;
+    font-weight: bold;
+}
+
+.logoFooter{
+    grid-row: 1;
+    grid-column: 1;
+    margin-left: 20rem;
+    margin-top: 2rem;
+}
+
+.navegacionFooter{
+    grid-row: 1;
+    grid-column: 2;
+    margin-left: 12rem;
+    margin-top: 2rem;
+    width: 12rem;
+}
+
+.navegacionFooter a{
+    color: white;
+}
+
+.redes{
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.redesGrid{
+    display: grid;
+    grid-template-columns: 2rem 2rem 2rem;
+    grid-template-rows: 3rem 2rem;
+}
+
+.seguinos{
+    margin-left: 50rem;
+    margin-top: 2rem;
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.facebook {
+    margin-left: 54rem;
+    margin-top: 1rem;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.twitter {
+    margin-left: 54rem;
+    margin-top: 1rem;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.instagram {
+    margin-left: 54rem;
+    margin-top: 1rem;
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.facebook img{
+    height: 1rem;
+    width: 1rem;
+}
+
+.twitter img{
+    height: 1rem;
+    width: 1rem;
+}
+
+.instagram img{
+    height: 1rem;
+    width: 1rem;
+}
+
+.hrvioleta{
+    height: 0.5rem;
+    background-color: #5227CC;
+    border: 1px solid #5227CC;
+}
+
+.hrblanco{
+    height: 0.01rem;
+    background-color: white;
+    border: 1px solid white;    
+}
+
+.hrblanco2{
+    height: 0.01rem;
+    background-color: white;
+    border: 1px solid white;  
+}
+
+.copyright{
+    color: black;
+    text-align: center;
+    background-color: #5227CC;
+    height: 1.5rem;
+    padding-top: 0.5rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+/* medida iphone 13 es de 390x844px*/
+@media (max-width: 390px){
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'DM Sans', sans-serif;
+    }
+    
+    h2{
+        font-weight: 100;
+    }
+
+    html {
+        box-sizing: border-box;
+        height: 100%;
+    }
+    
+    .navegacion{
+        display: grid;
+        grid-template-columns: 4rem 4rem 4rem 4rem auto;
+        grid-row: 3rem;
+        height: 4rem;
+    }
+    
+    .nav-menunosotros{
+        color: black;
+        font-weight: bold;
+        margin-top: 1.7rem;
+        font-size: 0.8rem;
+        margin-left: 2.5rem;
+    }
+
+    .nav-menunoticias{
+        color: black;
+        font-weight: bold;
+        margin-top: 1.7rem;
+        font-size: 0.8rem;
+        margin-left: 2.5rem;
+    }
+
+    .nav-menuayuda{
+        color: black;
+        font-weight: bold;
+        margin-top: 1.7rem;
+        font-size: 0.8rem;
+        margin-left: 2.5rem;
+    }
+    
+    #logo {
+        width: 4rem;
+        height: 1rem;
+        text-align: center;
+        margin-top: 1.7rem;
+        margin-left: 1rem;
+    }
+    
+    .flexBoton{
+        display: flex;
+        justify-content: right;
+    }
+
+    #botonIngresar{
+        width: 4rem;
+        height: 1rem;
+        margin-top: 1.7rem;
+        background-color: #5227CC;
+        color: white;
+        border:#5227CC;
+        border-radius: 3rem;
+        padding: 0.3rem;
+        font-weight: 100;
+        font-size: 0.5rem;
+        line-height: 0.5rem;
+    }
+
+    #popup{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        border: 1px solid white;
+        border-radius: 1rem;
+        display: none;
+        box-shadow: black;
+        background-color: rgba(0, 0, 0, 0.55);
+        backdrop-filter: opacity(0%);
+        margin-left: 25rem;
+    }
+    
+    .popupimagen{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    
+    .popupimagen img{
+        width: 10rem;
+        height: 10rem;
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-left: 1px solid white;
+    }
+    
+    .popuplateral{
+        grid-row: 2;
+        grid-column: 1;
+        border-radius: 1rem;
+        border-radius: 1rem;
+        border: 1px solid white;
+        background-color: white;
+        margin-top: -20rem;
+        width: 90%;
+        height: 16rem;
+        margin-left: -23rem;
+    }
+    
+    .lateralgrid{
+        display: grid;
+        grid-template-columns: 1rem 2rem 12rem 2rem;
+        grid-template-rows: 1.5rem 2rem 4rem 2rem;
+    }
+    
+    .popupflecha{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    
+    .popupflecha img{
+        width: 1rem;
+        height: 1rem;
+    }
+    
+    .popupvolver{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .popupvolver a{
+        color: black;
+        font-size: 0.8rem;
+        margin-left: 1rem;
+    }
+    
+    .popupcruz{
+        grid-column: 4;
+        grid-row: 1;
+    }
+    
+    .popupcruz img{
+        height: 0.7rem;
+        width: 0.7rem;
+        margin-left: -8em;
+    }
+    
+    .popupregistrar{
+        grid-column: 3;
+        grid-row: 2;
+        font-weight: bold;
+        font-size: 0.8rem;
+        margin-top: 1.5rem;
+        margin-left: 25%;
+    }
+    
+    .popupregistrar h2{
+        font-weight: bold;
+    }
+    
+    .popupempresa{
+        grid-column: 1/5;
+        grid-row: 3;
+        margin-top: 1rem;
+    }
+    
+    .popuporg{
+        grid-column: 1/5;
+        grid-row: 4;
+    }
+    
+    .empresagrid{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 2rem 6rem 1rem;
+        grid-template-rows: auto auto;
+        border: 1px solid grey;
+        box-shadow: black;
+        border-radius: 1rem;
+        width: 80%;
+        box-shadow: 2px 2px 2px 2px grey;
+        height: 4rem;
+        margin-top: 2rem;
+    }
+    
+    .orggrid{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 2rem 6rem 1rem;
+        grid-template-rows: auto auto;
+        border: 1px solid grey;
+        box-shadow: black;
+        border-radius: 1rem;
+        width: 80%;
+        box-shadow: 2px 2px 2px 2px grey;
+        margin-top: 20%;
+        height: 4rem;
+    }
+    
+    .popuplogo{
+        grid-column: 1;
+        grid-row: 1/3;
+    }
+    
+    .empresagrid .popuplogo{
+        background-color:#5298FF;
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+        margin-bottom: 5rem;
+        padding-bottom: 1.2rem;
+    }
+    
+    .orggrid .popuplogo{
+        background-color: #5227CC;
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .popuplogo img{
+        width: 1rem;
+        height: 1rem;
+        margin-left: 0.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .popuph2{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .popupempresa .popuph2 h2{
+        color:#5298FF;
+        font-weight: bold;
+        font-size: 1rem;
+        width: 6rem;
+        margin-top: -0.5rem;
+    }
+    .popuporg .popuph2 h2{
+        color: #5227CC;
+        font-weight: bold;
+        font-size: 1rem;
+        width: 10rem;
+        margin-top: -0.5rem;
+    }
+    
+    .popuptexto{
+        grid-column: 2;
+        grid-row: 2;
+        color: grey;
+        font-size: 0.7rem;
+    }
+
+    .popupempresa .popuptexto{
+        margin-top: -3.4rem;
+        width: 8rem;
+    }
+
+    .popuporg .popuptexto{
+        width: 8rem;
+        margin-top: -0.3rem;
+    } 
+    
+    .popupflecha2{
+        grid-column: 3;
+        grid-row: 2;
+        margin-top: -2.7rem;
+    }
+    
+    .popuporg .popupflecha2{
+        margin-top: 0.4rem;
+    }
+
+    header{
+        width: 100%;
+        height: 8rem;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/manos.jpg");
+        background-repeat: no-repeat;
+        background-size:contain;
+        text-align: center;
+        color: white;
+        vertical-align: middle;
+        background-blend-mode: darken;
+    }
+    
+    header h1{
+        font-size: 1rem;
+        line-height: 0.2rem;
+        padding-top: 1.5rem;
+    }
+    
+    header h2{
+        margin-top: 1.2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 0.7rem;
+        font-weight: 100;
+    }
+
+    .nosotros1 {
+        display: grid;
+        grid-template-rows: 6rem 7rem;
+        grid-template-columns: auto auto;
+        background-color: #5298FF;
+        font-weight: 100;
+        height: 20rem;
+        margin-top: -0.3rem;
+    }
+    
+    .texto1grid{
+        font-family: 'DM Sans', sans-serif;
+        color: white;
+        font-weight: 100;
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 0.5rem;
+        margin-top: 2rem;
+        width: 10rem;
+        margin-left: -1rem;
+    }
+    
+    .texto2grid{
+        color: white;
+        font-weight: 100;
+        grid-column: 1;
+        grid-row: 2;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 0.5rem;
+        margin-top: 3rem;
+        width: 10rem;
+    }
+    
+    .imagen1grid {
+        grid-column: 1;
+        grid-row: 1;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .imagen2grid {
+        grid-column: 2;
+        grid-row: 2;
+        margin-left: -1.4rem;
+        margin-top: 2.9rem;
+        margin-right: 1rem;
+    }
+    
+    .imagen2grid img{
+        height: 7rem;
+        width: 10rem;
+    }
+    
+    .imagen1grid img{
+        height: 7rem;
+        width: 10rem;
+    }
+    
+    .nosotros2{
+        width: 100%;
+        height: 75rem;
+        text-align: center;
+        font-weight: 100;
+        align-content: center;
+        background-color: white;
+        margin-top: -1rem;
+    }
+    
+    .textonosotros2{
+        font-size: 0.8rem;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+        padding-top: 1rem;
+    }
+    
+    .gridNosotros2{
+        display: grid;
+        grid-template-rows: 14rem 14rem 14rem 14rem;
+        grid-template-columns: 20rem;
+        font-weight: 100;
+        margin-top: 2rem;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+        color: white;
+    }
+    
+    .serVoluntario{
+        background-color: #DC3545;
+        border-radius: 1rem;
+        margin-right: 1rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .donar{
+        background-color: #FF9C07;
+        border-radius: 1rem;
+        margin-right: 1rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .reciclar{
+        background-color: #28A745;
+        border-radius: 1rem;
+        margin-right: 1rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .llamadosLaborales{
+        background-color: #17A2B8;
+        border-radius: 1rem;
+        margin-right: 1rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .gridBotonesNosotros2{
+        display: grid;
+        grid-template-columns: 2rem 2rem;
+        grid-template-rows: 4rem 2rem;
+    }
+    
+    .gridBotonesNosotros2 .logoNosotros2{
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .logoNosotros2 img{
+        width: 5rem;
+        height: 5rem;
+        margin-left: 2rem;
+        margin-top: -0.5rem;
+    }
+
+    #iconoMano{
+        width: 4rem;
+        height: 5rem;
+    }
+    
+    .gridBotonesNosotros2 .masNosotros2{
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 2rem;
+        margin-left: 11rem;
+    }
+    
+    .gridBotonesNosotros2 .textoBotonNosotros2{
+        grid-column: 1 / 3;
+        grid-row: 2;
+        font-size: 2rem;
+        text-align: left;
+        margin-left: 2rem;
+        margin-top: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .noticias{
+        background-color: #5298FF;
+        width: 100%;
+        padding-bottom: 5rem;
+        height: 140rem;
+    }
+
+    .noticiasGrid{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        margin-left: 1rem;
+    }
+    
+    .textoNoticias h2{
+        width: 100%;
+        text-align: center;
+        align-content: center;
+        padding-top: 2rem;
+        color: white;
+        font-size: 3rem;
+    }
+    
+    .textoNoticias p{
+        width: 100%;
+        text-align: center;
+        align-content: center;
+        margin-top: 1rem;
+        color: white;
+        margin-bottom: 2rem;
+    }
+    
+    .textoNoticias a{
+        text-decoration: underline;
+        color: white;
+        margin-top: 1rem;
+    }
+    
+    #noticia1{
+        grid-column: 1;
+        grid-row: 1;
+        background-color: white;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    #noticia2{
+        grid-column: 1;
+        grid-row: 2;
+        background-color: white;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    #noticia3{
+        grid-column: 1;
+        grid-row: 3;
+        background-color: white;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    #noticia4{
+        grid-column: 1;
+        grid-row: 4;
+        background-color: white;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .noticiaGrid{
+        display: grid;
+        grid-template-columns: 3rem 6rem 8rem 5rem;
+        grid-template-rows: 11rem 2rem 3rem 12rem 2rem;
+        color: black;
+        width: 22rem;
+    }
+    
+    .imagenNoticia {
+        grid-column: 1 / 5;
+        grid-row: 1 / 3;
+        border-radius: 1rem;
+        position: relative;
+    }
+    
+    .imagenNoticia img{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+    }
+    
+    .seccionNoticia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2rem;
+        background-color: #5227CC;
+        color: white;
+        width: 5.5rem;
+        height: 1.6rem;
+        text-align: center;
+        position: relative;
+        bottom: 4rem;
+        left: 1rem;
+        font-size: 1rem;
+    }
+    
+    .seccionVoluntariado{
+        width: 8rem;
+    }
+    
+    .calendarioNoticia{
+        grid-column: 1;
+        grid-row: 3;
+        text-align: right;
+        margin-top: 0.5rem;
+    }
+    
+    .fechaNoticia{
+        grid-column: 2;
+        grid-row: 3;
+        margin-left: 0.8rem;
+        margin-top: 0.5rem;
+    }
+    
+    .relojNoticia{
+        grid-column: 3;
+        grid-row: 3;
+        text-align: right;
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    
+    .horaNoticia{
+        grid-column: 4;
+        grid-row: 3;
+        margin-top: 0.5rem;
+    }
+    
+    .textoNoticia{
+        grid-column: 1 / 5;
+        grid-row: 4;
+        margin-left: 1.5rem;
+    }
+
+    .textoNoticia h2{
+        font-weight: bold;
+    }
+    
+    .flechaVerMasNoticia{
+        grid-column: 3;
+        grid-row: 5;
+        text-align: right;
+        margin-right: 0.5rem;
+        margin-top: 0.1rem;
+    }
+    
+    .verMasNoticia{
+        grid-column: 4;
+        grid-row: 5;
+    }
+    .verMasNoticia a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .contacto{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        width: 100%;
+        height: 10rem;
+        margin-top: 2rem;
+        padding-bottom: 8rem;
+        margin-left: -11rem;
+    }
+    
+    .imagenContacto{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .imagenContacto img{
+        height: 0rem;
+        width: 0rem;
+    }
+    
+    .formularioContacto{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .gridContacto{
+        display: grid;
+        grid-template-columns: 10rem 10rem;
+        grid-template-rows:5rem 7rem 5rem;
+    }
+    
+    .h2contacto{
+        grid-column: 1 / 2;
+        grid-row: 1;
+        text-align: center;
+        margin-bottom: 20rem;
+        margin-left: 4rem;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    
+    .textoDatos{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #datoACompletar1, #datoACompletar2{
+        border-radius: 0.5rem;
+        border: 1px solid grey;
+        padding: 0.2rem;
+        width: 10rem;
+    }
+    
+    .mensajeContacto{
+        grid-column: 2;
+        grid-row: 2;
+        text-align: left;
+        margin-left: 1rem;
+    }
+    
+    #mensajeContacto2{
+        border-radius: 0.5rem;
+        border: 1px solid grey;
+        width: 8rem;
+        text-align: left;
+    }
+    
+    .botonFormulario{
+        grid-column: 1/3;
+        grid-row: 3;
+        line-height: 2rem;
+        text-align: center;
+        background-color: #5227CC;
+        color: white;
+        border:#5227CC;
+        border-radius: 3rem;
+        font-weight: 100;
+        margin-left: 9rem;
+        height: 2rem;
+        width: 5rem;
+    }
+    
+    .botonFormulario a{
+        color: white;
+        text-decoration: none;
+    }
+
+    footer{
+        background-color: #7749F8;
+        display: grid;
+        grid-template-columns: 3rem 3rem 3rem;
+        height: 12rem;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .logoFooter{
+        grid-row: 1;
+        grid-column: 1;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .navegacionFooter{
+        grid-row: 1;
+        grid-column: 2;
+        margin-left: -1rem;
+        margin-top: 4.5rem;
+        width: 12rem;
+    }
+
+    .navegacionFooter a{
+        color: white;
+    }
+
+    .redes{
+        grid-row: 1;
+        grid-column: 3;
+    }
+    
+    .redesGrid{
+        display: grid;
+        grid-template-columns: 2rem 2rem 2rem;
+        grid-template-rows: 3rem 2rem;
+    }
+    
+    .seguinos{
+        margin-left: 7rem;
+        margin-top: 2rem;
+        grid-row: 1;
+        grid-column: 3;
+    }
+    
+    .facebook {
+        margin-left: 11rem;
+        margin-top: 0.55rem;
+        grid-row: 2;
+        grid-column: 1;
+    }
+    
+    .twitter {
+        margin-left: 10.5rem;
+        margin-top: 0.8rem;
+        grid-row: 2;
+        grid-column: 2;
+    }
+    
+    .instagram {
+        margin-left: 10rem;
+        margin-top: 0.8rem;
+        grid-row: 2;
+        grid-column: 3;
+    }
+    
+    .facebook img{
+        height: 1.3rem;
+        width: 1.3rem;
+    }
+    
+    .twitter img{
+        height: 1rem;
+        width: 1rem;
+    }
+    
+    .instagram img{
+        height: 1rem;
+        width: 1rem;
+    }
+    
+    .hrvioleta{
+        height: 0.5rem;
+        background-color: #5227CC;
+        border: 1px solid #5227CC;
+    }
+    
+    .hrblanco{
+        height: 0.01rem;
+        background-color: white;
+        border: 1px solid white;    
+    }
+    
+    .hrblanco2{
+        height: 0.01rem;
+        background-color: white;
+        border: 1px solid white;  
+    }
+    
+    .copyright{
+        color: black;
+        text-align: center;
+        background-color: #5227CC;
+        height: 1.5rem;
+        padding-top: 0.5rem;
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+    }
+}
