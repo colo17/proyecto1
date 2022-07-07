@@ -52,9 +52,9 @@ h2{
 
 #logo {
     width: 100%;
-    height: 40%;
+    height: 35%;
     text-align: center;
-    margin-top: 1.2rem;
+    margin-top: 1.4rem;
     margin-left: 8rem;
 }
 
@@ -78,14 +78,26 @@ h2{
     line-height: 0.5rem;
 }
 
+#modal {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+}
+
 #popup{
+    display: grid;
     grid-template-columns: 50rem 7rem;
     grid-template-rows: 32rem;
     background-color: rgba(0, 0, 0, 0.55);
     margin-left: 30%;
     border: 1px solid white;
     border-radius: 1rem;
-    display: none;
     box-shadow: black;
     margin-top: 2rem;
     backdrop-filter: opacity(80%);
@@ -403,6 +415,7 @@ header h2{
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
+
 #serVoluntario .logoNosotros2 img{
     margin-top: -0.6rem;
 }
@@ -854,11 +867,11 @@ footer{
     }
 
     #popup{
+        display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto;
         border: 1px solid white;
         border-radius: 1rem;
-        display: none;
         box-shadow: black;
         background-color: rgba(0, 0, 0, 0.55);
         backdrop-filter: opacity(0%);
@@ -887,10 +900,10 @@ footer{
         border-radius: 1rem;
         border: 1px solid white;
         background-color: white;
-        margin-top: -20rem;
-        width: 90%;
-        height: 16rem;
-        margin-left: -23rem;
+        margin-top: -10rem;
+        width: 18rem;
+        height: 17rem;
+        margin-left: -22rem;
     }
     
     .lateralgrid{

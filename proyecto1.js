@@ -11,8 +11,11 @@ getCookies();
 document.getElementById("botonIngresar").onclick = abrirPopUp;
 
 function abrirPopUp(){
-    let modal = document.getElementById("popup");
-    modal.style.display = "grid";
+    let modal = document.getElementById("modal");
+    modal.style.display = "block";
+    window.onscroll=function(){
+        window.scrollTo(window.scrollX, window.scrollY);
+    }
 }
 
 document.getElementById("cerrarPopUp1").onclick = cerrarPopUpf;
@@ -20,9 +23,8 @@ document.getElementById("cerrarPopUp2").onclick = cerrarPopUpf;
 document.getElementById("cerrarPopUp3").onclick = cerrarPopUpf;
 
 function cerrarPopUpf(){
-    let modal = document.getElementById("popup");
+    let modal = document.getElementById("modal");
     modal.style.display = "none";
-    console.log("hola");
 }
 
 document.getElementById("enviarFormulario").onclick = formularioEnviado;
@@ -60,7 +62,7 @@ function allLetter(inputtxt){
 document.getElementById("flechaEmpresa").onclick = EmpresaLogIn;
 
 function EmpresaLogIn(){
-    let modal = document.getElementById("popup");
+    let modal = document.getElementById("modal");
     modal.style.display = "none";
     document.getElementById("botonIngresar").innerHTML = "Empresa";
     document.cookie = "usuario=Empresa";
@@ -69,7 +71,7 @@ function EmpresaLogIn(){
 document.getElementById("flechaOrg").onclick = OrgLogIn;
 
 function OrgLogIn(){
-    let modal = document.getElementById("popup");
+    let modal = document.getElementById("modal");
     modal.style.display = "none";
     document.getElementById("botonIngresar").innerHTML = "Organizacion";
     document.cookie = "usuario=Organizacion";
